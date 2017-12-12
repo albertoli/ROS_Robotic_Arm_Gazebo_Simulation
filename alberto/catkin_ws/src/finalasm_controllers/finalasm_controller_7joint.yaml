@@ -1,0 +1,101 @@
+finalasm_position_controller_1:
+    controller:
+        package: dynamixel_controllers
+        module: joint_position_controller
+        type: JointPositionController
+    joint_name: joint_1
+    joint_speed: 0.5
+    motor:
+        id: 1
+        init: 2048
+        min: 87
+        max: 4009
+        bias: -0.318617013529
+
+finalasm_position_controller_2:
+    controller:
+        package: dynamixel_controllers
+        module: joint_position_controller
+        type: JointPositionController
+    joint_name: joint_2
+    joint_speed: 0.5
+    motor:
+        id: 2
+        init: 2048
+        min: 87
+        max: 4009
+
+finalasm_position_controller_3:
+    controller:
+        package: dynamixel_controllers
+        module: joint_position_controller
+        type: JointPositionController
+    joint_name: joint_3
+    joint_speed: 0.5
+    motor:
+        id: 3
+        init: 2048
+        min: 87
+        max: 4009
+
+finalasm_position_controller_4:
+    controller:
+        package: dynamixel_controllers
+        module: joint_position_controller
+        type: JointPositionController
+    joint_name: joint_4
+    joint_speed: 0.5
+    motor:
+        id: 4
+        init: 2048
+        min: 87
+        max: 4009
+
+finalasm_position_controller_5:
+    controller:
+        package: dynamixel_controllers
+        module: joint_position_controller
+        type: JointPositionController
+    joint_name: joint_5
+    joint_speed: 0.5
+    motor:
+        id: 5
+        init: 2048
+        min: 1025
+        max: 3070
+
+finalasm_position_controller_6:
+    controller:
+        package: dynamixel_controllers
+        module: joint_position_controller
+        type: JointPositionController
+    joint_name: joint_6
+    joint_speed: 0.5
+    motor:
+        id: 6
+        init: 2048
+        min: 1025
+        max: 3070
+
+finalasm_position_controller_7:
+    controller:
+        package: dynamixel_controllers
+        module: joint_position_controller
+        type: JointPositionController
+    joint_name: joint_7
+    joint_speed: 0.5
+    motor:
+        id: 7
+        init: 2048
+        min: 1025
+        max: 3070
+
+finalasm_joint_trajectory_action_controller:
+    controller:
+        package: dynamixel_controllers
+        module: joint_trajectory_action_controller
+        type: JointTrajectoryActionController
+    joint_trajectory_action_node:
+        min_velocity: 0.25
+        constraints:
+            goal_time: 5.0

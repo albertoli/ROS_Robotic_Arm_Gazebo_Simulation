@@ -1,0 +1,12 @@
+<launch>
+
+  <!-- Add Handy to Empty_World -->
+  <node
+    name="spawn_urdf"
+    pkg="gazebo_ros"
+    type="spawn_model"
+    args="-file $(find finalasm)/robots/kinect_test.urdf -urdf -z 1 -model handy"
+    output="screen" />
+
+
+    </launch>

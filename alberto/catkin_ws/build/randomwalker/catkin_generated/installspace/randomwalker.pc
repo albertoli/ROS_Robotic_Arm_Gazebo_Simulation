@@ -1,0 +1,8 @@
+prefix=/home/orsteam/alberto/catkin_ws/install
+
+Name: randomwalker
+Description: Description of randomwalker
+Version: 0.0.0
+Cflags: -I/home/orsteam/alberto/catkin_ws/install/include
+Libs: -L/home/orsteam/alberto/catkin_ws/install/lib 
+Requires: 

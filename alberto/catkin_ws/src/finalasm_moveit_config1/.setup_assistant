@@ -1,0 +1,8 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: finalasm
+    relative_path: robots/finalasm.URDF
+  SRDF:
+    relative_path: config/finalasm.srdf
+  CONFIG:
+    generated_timestamp: 1406665811

@@ -1,0 +1,15 @@
+<package>
+  <description brief="finalasm_controllers">
+
+     finalasm_controllers
+
+  </description>
+  <author>scratch</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/finalasm_controllers</url>
+  <depend package="dynamixel_controllers"/>
+
+</package>
+
+

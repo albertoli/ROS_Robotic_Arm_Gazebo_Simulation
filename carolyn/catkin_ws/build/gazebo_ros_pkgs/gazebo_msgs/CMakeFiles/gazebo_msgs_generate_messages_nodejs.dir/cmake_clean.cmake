@@ -1,0 +1,40 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/gazebo_msgs_generate_messages_nodejs"
+  "/home/orsteam/carolyn/catkin_ws/devel/share/gennodejs/ros/gazebo_msgs/msg/ModelStates.js"
+  "/home/orsteam/carolyn/catkin_ws/devel/share/gennodejs/ros/gazebo_msgs/msg/ODEJointProperties.js"
+  "/home/orsteam/carolyn/catkin_ws/devel/share/gennodejs/ros/gazebo_msgs/msg/ContactsState.js"
+  "/home/orsteam/carolyn/catkin_ws/devel/share/gennodejs/ros/gazebo_msgs/msg/ODEPhysics.js"
+  "/home/orsteam/carolyn/catkin_ws/devel/share/gennodejs/ros/gazebo_msgs/msg/LinkState.js"
+  "/home/orsteam/carolyn/catkin_ws/devel/share/gennodejs/ros/gazebo_msgs/msg/LinkStates.js"
+  "/home/orsteam/carolyn/catkin_ws/devel/share/gennodejs/ros/gazebo_msgs/msg/ContactState.js"
+  "/home/orsteam/carolyn/catkin_ws/devel/share/gennodejs/ros/gazebo_msgs/msg/WorldState.js"
+  "/home/orsteam/carolyn/catkin_ws/devel/share/gennodejs/ros/gazebo_msgs/msg/ModelState.js"
+  "/home/orsteam/carolyn/catkin_ws/devel/share/gennodejs/ros/gazebo_msgs/srv/SetJointTrajectory.js"
+  "/home/orsteam/carolyn/catkin_ws/devel/share/gennodejs/ros/gazebo_msgs/srv/SpawnModel.js"
+  "/home/orsteam/carolyn/catkin_ws/devel/share/gennodejs/ros/gazebo_msgs/srv/SetJointProperties.js"
+  "/home/orsteam/carolyn/catkin_ws/devel/share/gennodejs/ros/gazebo_msgs/srv/ApplyJointEffort.js"
+  "/home/orsteam/carolyn/catkin_ws/devel/share/gennodejs/ros/gazebo_msgs/srv/SetLinkProperties.js"
+  "/home/orsteam/carolyn/catkin_ws/devel/share/gennodejs/ros/gazebo_msgs/srv/SetLightProperties.js"
+  "/home/orsteam/carolyn/catkin_ws/devel/share/gennodejs/ros/gazebo_msgs/srv/GetPhysicsProperties.js"
+  "/home/orsteam/carolyn/catkin_ws/devel/share/gennodejs/ros/gazebo_msgs/srv/SetModelConfiguration.js"
+  "/home/orsteam/carolyn/catkin_ws/devel/share/gennodejs/ros/gazebo_msgs/srv/SetPhysicsProperties.js"
+  "/home/orsteam/carolyn/catkin_ws/devel/share/gennodejs/ros/gazebo_msgs/srv/SetLinkState.js"
+  "/home/orsteam/carolyn/catkin_ws/devel/share/gennodejs/ros/gazebo_msgs/srv/SetModelState.js"
+  "/home/orsteam/carolyn/catkin_ws/devel/share/gennodejs/ros/gazebo_msgs/srv/ApplyBodyWrench.js"
+  "/home/orsteam/carolyn/catkin_ws/devel/share/gennodejs/ros/gazebo_msgs/srv/DeleteModel.js"
+  "/home/orsteam/carolyn/catkin_ws/devel/share/gennodejs/ros/gazebo_msgs/srv/GetModelState.js"
+  "/home/orsteam/carolyn/catkin_ws/devel/share/gennodejs/ros/gazebo_msgs/srv/GetModelProperties.js"
+  "/home/orsteam/carolyn/catkin_ws/devel/share/gennodejs/ros/gazebo_msgs/srv/GetLinkProperties.js"
+  "/home/orsteam/carolyn/catkin_ws/devel/share/gennodejs/ros/gazebo_msgs/srv/GetLightProperties.js"
+  "/home/orsteam/carolyn/catkin_ws/devel/share/gennodejs/ros/gazebo_msgs/srv/GetLinkState.js"
+  "/home/orsteam/carolyn/catkin_ws/devel/share/gennodejs/ros/gazebo_msgs/srv/GetWorldProperties.js"
+  "/home/orsteam/carolyn/catkin_ws/devel/share/gennodejs/ros/gazebo_msgs/srv/BodyRequest.js"
+  "/home/orsteam/carolyn/catkin_ws/devel/share/gennodejs/ros/gazebo_msgs/srv/GetJointProperties.js"
+  "/home/orsteam/carolyn/catkin_ws/devel/share/gennodejs/ros/gazebo_msgs/srv/JointRequest.js"
+  "/home/orsteam/carolyn/catkin_ws/devel/share/gennodejs/ros/gazebo_msgs/srv/DeleteLight.js"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang )
+  include(CMakeFiles/gazebo_msgs_generate_messages_nodejs.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

@@ -1,0 +1,2 @@
+rosrun gazebo_ros spawn_model -file `rospack find pr2_urdf`/pr2.urdf -urdf -z 1 -model pr2
+

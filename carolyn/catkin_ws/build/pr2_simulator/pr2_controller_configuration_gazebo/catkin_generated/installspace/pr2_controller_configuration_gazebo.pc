@@ -1,0 +1,8 @@
+prefix=/home/orsteam/carolyn/catkin_ws/install
+
+Name: pr2_controller_configuration_gazebo
+Description: Description of pr2_controller_configuration_gazebo
+Version: 2.0.7
+Cflags: 
+Libs: -L/home/orsteam/carolyn/catkin_ws/install/lib 
+Requires: 

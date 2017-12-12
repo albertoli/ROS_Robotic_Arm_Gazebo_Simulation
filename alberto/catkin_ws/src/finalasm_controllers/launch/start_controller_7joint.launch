@@ -1,0 +1,65 @@
+<launch>
+  <rosparam file="$(find finalasm_controllers)/finalasm_controller.yaml" command="load"/>
+
+  <node name="finalasm_controller_spawner_1" pkg="dynamixel_controllers" type="controller_spawner.py"
+        args="--manager=finalasm_manager
+              --port port_0
+              --type=simple
+              finalasm_position_controller_1"
+        output="screen"/>
+
+  <node name="finalasm_controller_spawner_2" pkg="dynamixel_controllers" type="controller_spawner.py"
+        args="--manager=finalasm_manager
+              --port port_0
+              --type=simple
+	      finalasm_position_controller_2"
+        output="screen"/>
+
+  <node name="finalasm_controller_spawner_3" pkg="dynamixel_controllers" type="controller_spawner.py"
+        args="--manager=finalasm_manager
+              --port port_0
+              --type=simple
+              finalasm_position_controller_3"
+        output="screen"/>
+
+  <node name="finalasm_controller_spawner_4" pkg="dynamixel_controllers" type="controller_spawner.py"
+        args="--manager=finalasm_manager
+              --port port_0
+              --type=simple
+              finalasm_position_controller_4"
+        output="screen"/>
+
+  <node name="finalasm_controller_spawner_5" pkg="dynamixel_controllers" type="controller_spawner.py"
+        args="--manager=finalasm_manager
+              --port port_0
+              --type=simple
+              finalasm_position_controller_5"
+        output="screen"/>
+
+  <node name="finalasm_controller_spawner_6" pkg="dynamixel_controllers" type="controller_spawner.py"
+        args="--manager=finalasm_manager
+              --port port_0
+              --type=simple
+              finalasm_position_controller_6"
+        output="screen"/>
+
+  <node name="finalasm_controller_spawner_7" pkg="dynamixel_controllers" type="controller_spawner.py"
+        args="--manager=finalasm_manager
+              --port port_0
+              --type=simple
+              finalasm_position_controller_7"
+        output="screen"/>
+
+  <node name="finalasm_action_controller_spawner" pkg="dynamixel_controllers" type="controller_spawner.py"
+        args="--manager=finalasm_manager
+              --type=meta
+              finalasm_joint_trajectory_action_controller
+              finalasm_position_controller_1
+	      finalasm_position_controller_2
+              finalasm_position_controller_3
+              finalasm_position_controller_4
+              finalasm_position_controller_5
+              finalasm_position_controller_6
+              finalasm_position_controller_7"
+        output="screen"/>
+</launch>

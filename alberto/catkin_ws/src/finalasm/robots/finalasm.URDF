@@ -1,0 +1,519 @@
+<robot
+  name="finalasm">
+
+
+
+  <!-- Used for fixing robot to Gazebo 'base_link' -->
+  <link name="world"/>
+
+  <joint name="fixed" type="fixed">
+    <parent link="world"/>
+    <child link="base_link"/>
+  </joint>
+
+
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.0657435992941309 0.0321026763828113 2.50206915785742E-06"
+        rpy="0 0 0" />
+      <mass
+        value="1.10920648420033" />
+      <inertia
+        ixx="0.00116940616209063"
+        ixy="-0.000335388558117295"
+        ixz="-8.12145868023127E-08"
+        iyy="0.00259388525589382"
+        iyz="-5.03777550099755E-08"
+        izz="0.00279542582735697" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://finalasm/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.894117647058823 0.913725490196078 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://finalasm/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link_2">
+    <inertial>
+      <origin
+        xyz="0.00623194145048334 -0.109630071775746 6.16564908295647E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.471732731407009" />
+      <inertia
+        ixx="0.00043598698800203"
+        ixy="-8.18101024307166E-05"
+        ixz="3.03857155322597E-08"
+        iyy="0.000642981767582138"
+        iyz="6.21274687838699E-08"
+        izz="0.000966618386152303" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://finalasm/meshes/link_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://finalasm/meshes/link_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_1"
+    type="revolute">
+    <origin
+      xyz="0.058 0 0.0672"
+      rpy="3.1416 -6.123E-17 -1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_2" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-2.1"
+      upper="2.1"
+      effort="6"
+      velocity="1" />
+  </joint>
+  <link
+    name="link_3">
+    <inertial>
+      <origin
+        xyz="-1.4174944178269E-05 0.00264246696370786 0.0631755073826014"
+        rpy="0 0 0" />
+      <mass
+        value="0.230539573640638" />
+      <inertia
+        ixx="0.000652518497338707"
+        ixy="8.47977971034165E-09"
+        ixz="2.18571759412113E-07"
+        iyy="0.000478995922449046"
+        iyz="-3.78817006134333E-05"
+        izz="0.000236315003293038" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://finalasm/meshes/link_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://finalasm/meshes/link_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_2"
+    type="revolute">
+    <origin
+      xyz="0 -0.14565 0"
+      rpy="1.5708 -1.5708 0" />
+    <parent
+      link="link_2" />
+    <child
+      link="link_3" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-2"
+      upper="2"
+      effort="6"
+      velocity="1" />
+  </joint>
+  <link
+    name="link_4">
+    <inertial>
+      <origin
+        xyz="4.10384971617116E-05 -0.000171450715305263 0.0677477888585321"
+        rpy="0 0 0" />
+      <mass
+        value="0.0971248042822277" />
+      <inertia
+        ixx="7.0533041896389E-05"
+        ixy="-2.28665822343197E-09"
+        ixz="-4.3570185443232E-07"
+        iyy="7.43710318847513E-05"
+        iyz="-9.12340187630138E-08"
+        izz="2.87004147259665E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://finalasm/meshes/link_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://finalasm/meshes/link_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_3"
+    type="revolute">
+    <origin
+      xyz="0 0 0.1286"
+      rpy="-2.7756E-15 -2.0812E-47 -1.5708" />
+    <parent
+      link="link_3" />
+    <child
+      link="link_4" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-1.8"
+      upper="1.8"
+      effort="6"
+      velocity="1" />
+  </joint>
+  <link
+    name="link_5">
+    <inertial>
+      <origin
+        xyz="0.0703070404251808 6.31790882615605E-05 1.26717083493988E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.123326405816582" />
+      <inertia
+        ixx="3.63791196402984E-05"
+        ixy="2.22795421044366E-07"
+        ixz="-1.47792692489334E-07"
+        iyy="0.00012626914469489"
+        iyz="-1.09536405961749E-08"
+        izz="0.00013817442196856" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://finalasm/meshes/link_5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://finalasm/meshes/link_5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_4"
+    type="revolute">
+    <origin
+      xyz="0 -0.00020003 0.0905"
+      rpy="1.5708 -1.5708 0" />
+    <parent
+      link="link_4" />
+    <child
+      link="link_5" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-1.8"
+      upper="1.8"
+      effort="6"
+      velocity="1" />
+  </joint>
+  <link
+    name="link_6">
+    <inertial>
+      <origin
+        xyz="-2.68778574528747E-05 0.0183675036583099 0.0552579720439704"
+        rpy="0 0 0" />
+      <mass
+        value="0.0511750168424243" />
+      <inertia
+        ixx="2.36027950135697E-05"
+        ixy="-1.82655469485219E-10"
+        ixz="1.74456286258475E-07"
+        iyy="2.45644732163481E-05"
+        iyz="2.9630224652712E-07"
+        izz="9.96833356911432E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://finalasm/meshes/link_6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://finalasm/meshes/link_6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_5"
+    type="revolute">
+    <origin
+      xyz="0.1169 0.00019755 -0.01875"
+      rpy="1.5708 0 1.5708" />
+    <parent
+      link="link_5" />
+    <child
+      link="link_6" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-1.8"
+      upper="1.8"
+      effort="6"
+      velocity="1" />
+  </joint>
+  <link
+    name="link_7">
+    <inertial>
+      <origin
+        xyz="-0.00629355991792452 -0.017930911235571 -0.0442792262153655"
+        rpy="0 0 0" />
+      <mass
+        value="0.055642394884242" />
+      <inertia
+        ixx="2.33808911540242E-05"
+        ixy="2.41952624213128E-08"
+        ixz="2.17744084459433E-06"
+        iyy="2.45952256871399E-05"
+        iyz="1.69291377261494E-07"
+        izz="1.60747813149391E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://finalasm/meshes/link_7.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://finalasm/meshes/link_7.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_6"
+    type="revolute">
+    <origin
+      xyz="0.01875 0.0185 0.0728"
+      rpy="3.1416 -2.2204E-14 1.5708" />
+    <parent
+      link="link_6" />
+    <child
+      link="link_7" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-1.8"
+      upper="1.8"
+      effort="6"
+      velocity="1" />
+  </joint>
+  <link
+    name="link_8">
+    <inertial>
+      <origin
+        xyz="1.43062187855751E-10 -0.00618516265998337 6.1943593925029E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.0079114512462284" />
+      <inertia
+        ixx="1.6682426451027E-06"
+        ixy="1.58058743902357E-16"
+        ixz="1.44663183892758E-17"
+        iyy="1.9348211205839E-06"
+        iyz="2.55116963459817E-10"
+        izz="5.25024182947632E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://finalasm/meshes/link_8.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://finalasm/meshes/link_8.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_7"
+    type="revolute">
+    <origin
+      xyz="0.0035 -0.018 -0.07"
+      rpy="1.5708 6.5052E-17 1.5708" />
+    <parent
+      link="link_7" />
+    <child
+      link="link_8" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-1.8"
+      upper="1.8"
+      effort="6"
+      velocity="1" />
+  </joint>
+  <link
+    name="link_9">
+    <inertial>
+      <origin
+        xyz="3.18822355904747E-07 2.27008447939436E-06 0.0150804545456978"
+        rpy="0 0 0" />
+      <mass
+        value="0.0072913429879866" />
+      <inertia
+        ixx="1.22579554311407E-06"
+        ixy="5.17158717639898E-13"
+        ixz="-2.50052583465586E-11"
+        iyy="3.23550320617183E-06"
+        iyz="1.58942365493815E-10"
+        izz="2.87654487939412E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://finalasm/meshes/link_9.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://finalasm/meshes/link_9.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_8"
+    type="revolute">
+    <origin
+      xyz="-0.0225 -0.027 -0.00023"
+      rpy="3.1416 1.5708 0" />
+    <parent
+      link="link_8" />
+    <child
+      link="link_9" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      lower="-1.8"
+      upper="1.8"
+      effort="6"
+      velocity="1" />
+  </joint>
+</robot>

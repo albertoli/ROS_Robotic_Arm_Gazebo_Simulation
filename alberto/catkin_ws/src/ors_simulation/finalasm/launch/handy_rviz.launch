@@ -1,0 +1,23 @@
+<launch>
+ <!-- Load the URDF into the ROS Parameter Server -->
+  <param name="robot_description"
+         textfile="$(find finalasm)/robots/finalasm.URDF" />
+
+  <!-- Disable torque on all humanoid joints/motors -->
+  <node name="disable_torque_handy" pkg="finalasm_controllers" type="disable_torque_handy.py"/>
+
+  <!-- Start Handy joint state publisher (dynamixel_msgs.msg JointState -> sensor_msgs.msg JointState) -->
+  <node name="handy_joint_state_publisher" pkg="finalasm_controllers" type="finalasm_joint_state_publisher.py"/>
+  
+ <!-- send fake joint values -->
+  <!-- node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" -->
+    <!-- param name="use_gui" value="TRUE"/ -->
+  <!-- /node -->
+
+  <!-- Combine joint values -->
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher"/>
+
+  <!-- Show in Rviz   -->
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find finalasm)/launch/handy.rviz"/>
+
+</launch>
